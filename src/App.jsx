@@ -71,16 +71,14 @@ const App = () => {
   return (
     <div className="bg-gradient-to-tr from-[#c9d4d5] to-[#eaeded] h-screen flex justify-center items-center">
       <div className="bg-gradient-to-br from-[#051f32] to-[#03192a] py-8 px-5 rounded-3xl">
-        <div className='p-1'>
+        <div className="relative w-full">
           <input
             type="text"
             ref={inputRef}
-            placeholder="Enter Your Location"
-            className="text-base font-normal text-[#f09900] placeholder:text-stone-300 placeholder:font-normal bg-[#fefefe] rounded-full py-2 px-4 outline-none border border-[#f09900] capitalize"
-          />
-          <i className="py-2 px-4 ml-1 text-[#f09900] bg-[#fefefe] rounded-full border border-[#f09900]">
+            className="block p-2.5 w-full text-sm font-normal text-[#f09900] placeholder:text-stone-400 placeholder:font-normal bg-[#fefefe] rounded-lg border border-[#f09900] capitalize outline-none" placeholder="Enter Your City" />
+          <button className="absolute top-0 end-0 p-2.5 text-base h-full text-[#f09900] rounded-e-lg">
             <FontAwesomeIcon icon={faMagnifyingGlass} onClick={() => search(inputRef.current.value)} />
-          </i>
+          </button>
         </div>
 
         <div className="text-center flex flex-col gap-4 mt-8">
