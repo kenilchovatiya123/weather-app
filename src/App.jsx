@@ -70,7 +70,7 @@ const App = () => {
 
   return (
     <div className="bg-gradient-to-tr from-[#c9d4d5] to-[#eaeded] h-screen flex justify-center items-center">
-      <div className="bg-gradient-to-br from-[#051f32] to-[#03192a] w-3/12 py-8 px-5 rounded-3xl">
+      <div className="bg-gradient-to-br from-[#051f32] to-[#03192a] w-[320px] sm:w-[420px] py-8 px-5 rounded-3xl">
         <div className="relative">
           <input
             type="text"
